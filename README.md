@@ -1,5 +1,5 @@
 how to run this app?
 
 - open terminal
-- cd kurir-apps
-- ng serve
+- cd ionic-kurir-app
+- ng serve or ionic serve
