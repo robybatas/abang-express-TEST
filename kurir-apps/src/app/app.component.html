@@ -1,0 +1,6 @@
+<div class="default-margin-and-hader" *ngIf="isVisible">
+  <app-splash-screen></app-splash-screen>
+</div>
+<div class="default-margin-and-hader" *ngIf="!isVisible">
+  <router-outlet></router-outlet>
+</div>
