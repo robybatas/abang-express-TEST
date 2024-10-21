@@ -1,0 +1,50 @@
+.image-container {
+  width: 100vw;
+
+  img {
+    width: 100%;
+  }
+}
+
+.login-container {
+  position: absolute;
+  z-index: 2;
+  border-radius: 24px 24px 0px 0px;
+  background-color: #FFFFFF;
+  height: calc(100% - 205px);
+  bottom: 0;
+  width: 100%;
+  padding: 24px 18px;
+}
+
+.button-section-login {
+
+  .red-button {
+    height: 48px;
+    background-color: #E52138;
+    border-radius: 12px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+  }
+}
+
+.forgot-password {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+  .anchor {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    color: #E52138;
+    cursor: pointer;
+  }
+}
+

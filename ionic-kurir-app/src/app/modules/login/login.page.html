@@ -1,0 +1,30 @@
+<ion-content [fullscreen]="true">
+  <div class="image-container">
+    <img alt="login-illustration" src="/assets/img/login-illustration.svg" />
+  </div>
+  <div class="login-container">
+    <h1 class="title-medium text-center">Masuk ke Akun Mu.</h1>
+    <div class="input-box">
+      <ion-input placeholder="Email / Nomor Telepon" [(ngModel)]="loginData.email"></ion-input>
+    </div>
+    <div class="input-box">
+      <ion-input
+        [type]="showPassword ? 'text' : 'password'"
+        placeholder="Password"
+        [(ngModel)]="loginData.password">
+      </ion-input>
+      <img
+        alt="toggle-password-visibility"
+        class="icon-item"
+        [src]="showPassword ? '/assets/icon/eye-open.svg' : '/assets/icon/blind-eye.svg'"
+        (click)="togglePasswordVisibility()"
+      />
+    </div>
+    <div class="forgot-password">
+      <div class="anchor" (click)="onClickForgotPassword()">Lupa Password?</div>
+    </div>
+    <div class="button-section-login">
+      <ion-button expand="full" color="none" fill="clear" class="red-button" (click)="onSubmit()">Masuk</ion-button>
+    </div>
+  </div>
+</ion-content>

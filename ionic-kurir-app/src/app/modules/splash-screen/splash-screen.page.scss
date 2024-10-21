@@ -1,0 +1,23 @@
+.splash-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeInOut {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+/* Apply the animation */
+.fade-in-out {
+  animation: fadeInOut 3s ease-in-out infinite;
+}

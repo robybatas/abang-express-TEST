@@ -1,0 +1,41 @@
+.onboarding-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px;
+  height: 100%;
+
+  .image-container {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -52.23px;
+}
+  .content {
+    align-self: center;
+    text-align: center;
+
+    .description {
+      width: 208px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 6px;
+    }
+  }
+}
+
+.button-section {
+
+  .red-button {
+    height: 48px;
+    margin: 0px 20px 0px 20px;
+    background-color: #E52138;
+    border-radius: 16px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.41px;
+  }
+}
