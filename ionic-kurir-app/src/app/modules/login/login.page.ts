@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Login } from '../../models/login/user-login.interface';
+import { Component } from '@angular/core';
+import { UserLoginInput } from '../../models/login/user-login.interface';
 import { NavController } from '@ionic/angular';
 
 
@@ -10,7 +10,7 @@ import { NavController } from '@ionic/angular';
 })
 export class LoginPage {
 
-  loginData: Login = {
+  loginData: UserLoginInput = {
     email: '',
     password: ''
   };

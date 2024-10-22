@@ -56,6 +56,22 @@
   color: #667085;
 }
 
+.text-sm-normal {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  color: #667085;
+}
+
+.text-md-medium {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  color: #101828;
+}
+
 .full-width {
   width: 100%;
 }
@@ -90,5 +106,40 @@
 
   .icon-item {
     width: 8%;
+  }
+}
+
+.pl-6 {
+  padding-left: 6px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mtb-16 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.nav-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22.9px;
+  text-align: center;
+}
+
+.button-section {
+
+  .red-button {
+    height: 48px;
+    background-color: #E52138;
+    border-radius: 12px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
   }
 }

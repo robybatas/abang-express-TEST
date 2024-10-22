@@ -6,7 +6,9 @@ import { IonicModule } from '@ionic/angular';
 
 import { ForgotPasswordPageRoutingModule } from './forgot-password-routing.module';
 
-import { ForgotPasswordPage } from './forgot-password.page';
+import { ForgotPasswordPage } from './private-components/submit-email/forgot-password.page';
+import { HeaderWithButtonBackComponent } from 'src/app/shared-components/header-with-button-back/header-with-button-back.component';
+import { InputOtpPage } from './private-components/input-otp/input-otp.page';
 
 @NgModule({
   imports: [
@@ -15,6 +17,6 @@ import { ForgotPasswordPage } from './forgot-password.page';
     IonicModule,
     ForgotPasswordPageRoutingModule
   ],
-  declarations: [ForgotPasswordPage]
+  declarations: [ForgotPasswordPage, InputOtpPage, HeaderWithButtonBackComponent]
 })
 export class ForgotPasswordPageModule {}
