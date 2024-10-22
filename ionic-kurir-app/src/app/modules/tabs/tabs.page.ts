@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class TabsPage {
 
+  tab: string = 'tab1';
+
   constructor() {}
+
+  onTabClick(tabId: string) {
+    this.tab = tabId;
+  }
 
 }

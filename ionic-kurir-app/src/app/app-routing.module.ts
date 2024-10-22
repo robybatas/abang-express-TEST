@@ -7,8 +7,8 @@ const routes: Routes = [
     loadChildren: () => import('./modules/splash-screen/splash-screen.module').then( m => m.SplashScreenPageModule)
   },
   {
-    path: 'main-menu',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+    path: 'menu',
+    loadChildren: () => import('./modules/tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
     path: 'onboarding',
@@ -21,7 +21,7 @@ const routes: Routes = [
   {
     path: 'forgot-password',
     loadChildren: () => import('./modules/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
-  }
+  },
 ];
 @NgModule({
   imports: [

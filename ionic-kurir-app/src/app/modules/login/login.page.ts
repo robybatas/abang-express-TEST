@@ -24,7 +24,11 @@ export class LoginPage {
   }
 
   onSubmit() {
-    console.log('Login Data:', this.loginData);
+    if(this.loginData.password === 'password' && this.loginData.email === 'emailroby@mail.com'){
+      this.navCtrl.navigateRoot('/menu/tab1', { animated: true });
+    } else {
+      alert('Maaf, salah bosku! Coba emailnya "emailroby@mail.com" dan passwordnya "password"')
+    }
   }
 
   onClickForgotPassword() {

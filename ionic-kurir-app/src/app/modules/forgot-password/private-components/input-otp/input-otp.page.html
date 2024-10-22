@@ -1,6 +1,24 @@
 <ion-content [fullscreen]="true">
   <app-header-with-button-back title="Lupa Kata Sandi"></app-header-with-button-back>
-  <div class="forgot-password-container">
-
+  <div class="otp-container">
+    <div class="image-container">
+      <img alt="email-icon" src="/assets/icon/email.svg" />
+    </div>
+    <div class="content">
+      <div class="text-lg-bold">Masukan Kode Verifikasi</div>
+      <div class="text-sm-normal description">Kode verifikasi telah kami kirim melalui email adv*******&#64;gmail.com</div>
+      <div class="otp-container">
+        <ion-input
+          *ngFor="let digit of otpDigits; let i = index"
+          [(ngModel)]="otp[i]"
+          maxlength="1"
+          type="tel"
+          (ionInput)="onInput($event, i)"
+          class="otp-input"
+        ></ion-input>
+      </div>
+      <div class="text-sm-normal timer" *ngIf="isTimer">mohon tunggu dalam {{ timeLeft }} tetik untuk verifikasi ulang</div>
+      <div class="text-sm-normal timer" *ngIf="!isTimer">Tidak menerima kode? <b class="anchor" (click)="resetTimer()">Kirim ulang</b></div>
+    </div>
   </div>
 </ion-content>

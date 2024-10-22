@@ -5,3 +5,8 @@ export interface UserForgotPasswordInput {
 export interface UserForgotPasswordNumberInput {
   number: number;
 }
+
+export interface UserChangePasswordInput {
+  newPassword: string;
+  reinput: string;
+}

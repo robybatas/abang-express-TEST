@@ -1,0 +1,62 @@
+.active-icon-home {
+  content: url('/assets/icon/home-active.svg');
+  font-size: 32px;
+}
+
+.inactive-icon-home {
+  content: url('/assets/icon/home.svg');
+  font-size: 32px;
+}
+
+.active-icon-nearby {
+  content: url('/assets/icon/nearby-active.svg');
+  font-size: 32px;
+}
+
+.inactive-icon-nearby {
+  content: url('/assets/icon/nearby.svg');
+  font-size: 32px;
+}
+
+.active-icon-notif {
+  content: url('/assets/icon/notif-active.svg');
+  font-size: 32px;
+}
+
+.inactive-icon-notif {
+  content: url('/assets/icon/notif.svg');
+  font-size: 32px;
+}
+
+.active-icon-profile {
+  content: url('/assets/icon/profile-active.svg');
+  font-size: 32px;
+}
+
+.inactive-icon-profile {
+  content: url('/assets/icon/profile.svg');
+  font-size: 32px;
+}
+
+.active-label {
+  color: #E52138;
+  padding-bottom: 4px;
+}
+
+.inactive-label {
+  color: #A0A4A8;
+  padding-bottom: 4px;
+}
+
+.pick-icon {
+  font-size: 32px;
+}
+
+.floating {
+  content: url('/assets/icon/pickup.svg');
+  font-size: 56px;
+  position: absolute;
+  bottom: 14px;
+  z-index: 100;
+  left: calc(50vw - 28px);
+}
