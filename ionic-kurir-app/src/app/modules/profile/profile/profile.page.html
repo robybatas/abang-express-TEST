@@ -1,0 +1,110 @@
+<ion-content [fullscreen]="true">
+  <div class="profile-container">
+    <div class="text-headline profile-title">Akun</div>
+    <ion-card class="custom-card">
+      <ion-card-content class="custom-flex">
+        <img alt="avatar" src="/assets/img/avatas.svg" />
+        <div class="profile-detail">
+          <div class="text-md-medium">Roby Fernando</div>
+          <div class="text-xs-regular night-sky">+62822-8058-1234</div>
+          <div class="text-xs-regular night-sky">robybatas&#64;gmail.com</div>
+        </div>
+        <div class="anchor" (click)="onClickChangeProfile()">Ubah</div>
+      </ion-card-content>
+    </ion-card>
+    <div class="profile-option">
+      <div class="item" (click)="onClickChangePassword()">
+        <div class="position-center">
+          <div class="item-name">
+            <img class="item-icon-2" alt="arrow-right" src="/assets/icon/key.svg" />
+            <div class="text">
+              Ganti Kata Sandi
+            </div>
+          </div>
+        </div>
+        <div class="position-center">
+          <img alt="arrow-right" class="item-icon" src="/assets/icon/arrow-right.svg" />
+        </div>
+      </div>
+      <div class="item">
+        <div class="position-center">
+          <div class="item-name">
+            <img class="item-icon-2" alt="arrow-right" src="/assets/icon/star.svg" />
+            <div class="text">
+              Beri Nilai Aplikasi
+            </div>
+          </div>
+        </div>
+        <div class="position-center">
+          <img alt="arrow-right" class="item-icon" src="/assets/icon/arrow-right.svg" />
+        </div>
+      </div>
+      <div class="item">
+        <div class="position-center">
+          <div class="item-name">
+            <img class="item-icon-2" alt="arrow-right" src="/assets/icon/bel.svg" />
+            <div class="text">
+              Notifikasi
+            </div>
+          </div>
+        </div>
+        <div class="position-center">
+          <img alt="arrow-right" class="item-icon" src="/assets/icon/arrow-right.svg" />
+        </div>
+      </div>
+      <div class="item">
+        <div class="position-center">
+          <div class="item-name">
+            <img class="item-icon-2" alt="arrow-right" src="/assets/icon/help.svg" />
+            <div class="text">
+              Bantuan
+            </div>
+          </div>
+        </div>
+        <div class="position-center">
+          <img alt="arrow-right" class="item-icon" src="/assets/icon/arrow-right.svg" />
+        </div>
+      </div>
+      <div class="item">
+        <div class="position-center">
+          <div class="item-name">
+            <img class="item-icon-2" alt="arrow-right" src="/assets/icon/protect.svg" />
+            <div class="text">
+              Kebijakan Privasi
+            </div>
+          </div>
+        </div>
+        <div class="position-center">
+          <img alt="arrow-right" class="item-icon" src="/assets/icon/arrow-right.svg" />
+        </div>
+      </div>
+      <div id="open-custom-dialog" class="item">
+        <div class="position-center">
+          <div class="item-name">
+            <img class="item-icon-2" alt="arrow-right" src="/assets/icon/exit.svg" />
+            <div class="text">
+              Keluar
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-modal id="example-modal" #modal trigger="open-custom-dialog">
+  <ng-template>
+    <div class="modal-container">
+      <div class="text-headline">
+        Keluar dari Abang Express Kurir.
+      </div>
+      <div class="text-sm-normal modal-text">
+        Apakah Anda yakin ingin keluar?
+      </div>
+      <div class="button-container">
+        <ion-button fill="clear" color="medium" (click)="modal.dismiss()">BATAL</ion-button>
+        <ion-button fill="clear" color="danger" (click)="logOut(); modal.dismiss()">KELUAR</ion-button>
+      </div>
+    </div>
+  </ng-template>
+</ion-modal>

@@ -27,15 +27,7 @@ export class InputNewPasswordPage {
     this.showReinputPassword = !this.showReinputPassword
   }
   onClickForgotPassword() {
-    if(this.changePasswordData.newPassword === this.changePasswordData.reinput) {
-      if(this.changePasswordData.newPassword.length >= 8) {
-        this.navCtrl.navigateRoot('/forgot-password/success-change', { animated: true });
-      } else {
-        alert('Maaf, minimal 8 karakter bosku!');
-      }
-    } else {
-      alert('Maaf, belum sama bosku!');
-    }
+    this.navCtrl.navigateRoot('/forgot-password/success-change', { animated: true });
   }
 
 }

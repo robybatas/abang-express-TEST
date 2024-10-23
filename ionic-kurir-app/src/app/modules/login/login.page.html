@@ -4,21 +4,39 @@
   </div>
   <div class="login-container">
     <h1 class="title-medium text-center">Masuk ke Akun Mu.</h1>
-    <div class="input-box">
-      <ion-input placeholder="Email / Nomor Telepon" [(ngModel)]="loginData.email"></ion-input>
+    <div class="remove-padding">
+      <ion-item style="--border-color: #FFFFFF">
+        <ion-input
+          [(ngModel)]="loginData.email"
+          type="text"
+          mode="md"
+          label="Email / Nomor Telepon"
+          label-placement="floating"
+          fill="outline"
+          placeholder="Masukkan Email / Nomor Telepon"
+          style="margin-top: 8px;">
+        </ion-input>
+      </ion-item>
     </div>
-    <div class="input-box">
-      <ion-input
-        [type]="showPassword ? 'text' : 'password'"
-        placeholder="Password"
-        [(ngModel)]="loginData.password">
-      </ion-input>
-      <img
-        alt="toggle-password-visibility"
-        class="icon-item"
-        [src]="showPassword ? '/assets/icon/eye-open.svg' : '/assets/icon/blind-eye.svg'"
-        (click)="togglePasswordVisibility()"
-      />
+    <div class="remove-padding">
+      <ion-item style="--border-color: #FFFFFF">
+        <ion-input
+        [(ngModel)]="loginData.password"
+          [type]="showPassword ? 'text' : 'password'"
+          mode="md"
+          label="Password"
+          label-placement="floating"
+          fill="outline"
+          placeholder="Masukkan Password"
+          style="margin-top: 8px;">
+        </ion-input>
+        <ion-icon
+          slot="end"
+          [name]="!showPassword  ? 'eye-off' : 'eye'"
+          (click)="togglePasswordVisibility()"
+          style="cursor: pointer; position: absolute; right: 0; margin-right: 36px; margin-top: 16px; z-index: 1000; color: #667085;">
+      </ion-icon>
+      </ion-item>
     </div>
     <div class="forgot-password">
       <div class="anchor" (click)="onClickForgotPassword()">Lupa Password?</div>

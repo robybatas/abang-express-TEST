@@ -1,7 +1,18 @@
 .center-title {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 14px;
   right: 0;
   margin: 0 auto;
+}
+
+.custom-toolbar {
+  background-color: #FFFFFF !important;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+ion-toolbar {
+  --background: #FFFFFF !important;
 }

@@ -1,0 +1,144 @@
+<ion-content [fullscreen]="true">
+  <app-header-with-button-back title="Ubah Profile"></app-header-with-button-back>
+
+  <div class="profile-content">
+    <img alt="avatar" src="/assets/img/avatas.svg" />
+    <div class="profile-detail">
+      <div class="text-xs-regular night-sky mt-6">Semua orang akan</div>
+      <div class="text-xs-regular night-sky">dapat melihat foto Kamu..</div>
+    </div>
+  </div>
+  <ion-item style="--border-color: #FFFFFF">
+    <ion-input
+      [(ngModel)]="userData.name"
+      type="text"
+      mode="md"
+      label="Nama *"
+      label-placement="floating"
+      fill="outline"
+      placeholder="Masukkan Nama"
+      style="margin-top: 8px;">
+    </ion-input>
+  </ion-item>
+  <ion-item class="mt-6" style="--border-color: #FFFFFF">
+    <ion-input
+      [(ngModel)]="userData.email"
+      type="text"
+      mode="md"
+      label="Email *"
+      label-placement="floating"
+      fill="outline"
+      placeholder="Masukkan Email"
+      style="margin-top: 8px;">
+    </ion-input>
+  </ion-item>
+  <ion-item class="mt-6" style="--border-color: #FFFFFF">
+    <ion-input
+      [(ngModel)]="userData.phone"
+      type="text"
+      mode="md"
+      label="Nomor Handphone"
+      label-placement="floating"
+      fill="outline"
+      placeholder="Masukkan Nomor Handphone"
+      style="margin-top: 8px;">
+    </ion-input>
+  </ion-item>
+  <ion-item class="mt-6" style="--border-color: #FFFFFF">
+    <ion-input
+      [(ngModel)]="userData.date"
+      type="text"
+      mode="md"
+      label="Tanggal Lahir"
+      label-placement="floating"
+      fill="outline"
+      placeholder="Masukkan Tanggal Lahir"
+      style="margin-top: 8px;">
+    </ion-input>
+  </ion-item>
+  <div (click)="openDropList($event, 'gender')">
+    <ion-item class="mt-6" style="--border-color: #FFFFFF">
+      <ion-input
+        [(ngModel)]="userData.gender"
+        type="text"
+        mode="md"
+        label="Jenis Kelamin"
+        label-placement="floating"
+        fill="outline"
+        style="margin-top: 8px;"
+        readonly>
+          <ion-icon
+            slot="end"
+            name="chevron-down-outline"
+            style="cursor: pointer;">
+          </ion-icon>
+      </ion-input>
+    </ion-item>
+  </div>
+  <div [ngStyle]="{ 'display' : isGender ? 'block' : 'none'}" class="dropdown-content">
+    <div class="item" (click)="userData.gender = 'Laki - Laki'; isGender = !isGender">Laki - Laki</div>
+    <div class="item" (click)="userData.gender = 'Perempuan'; isGender = !isGender">Perempuan</div>
+  </div>
+  <div (click)="openDropList($event, 'city')">
+    <ion-item class="mt-6" style="--border-color: #FFFFFF" (click)="isCity = !isCity; isGender = false; isDistrict = false">
+      <ion-input
+        [(ngModel)]="userData.city"
+        type="text"
+        mode="md"
+        label="Provinsi"
+        label-placement="floating"
+        fill="outline"
+        style="margin-top: 8px;"
+        readonly>
+        <ion-icon
+          slot="end"
+          name="chevron-down-outline"
+          style="cursor: pointer;">
+        </ion-icon>
+      </ion-input>
+    </ion-item>
+  </div>
+  <div [ngStyle]="{ 'display' : isCity ? 'block' : 'none'}" class="dropdown-content">
+    <div class="item" (click)="userData.city = 'DKI Jakarta'; isCity = !isCity">DKI Jakarta</div>
+    <div class="item" (click)="userData.city = 'Jawa Barat'; isCity = !isCity">Jawa Barat</div>
+  </div>
+  <div (click)="openDropList($event, 'district')">
+    <ion-item class="mt-6" style="--border-color: #FFFFFF">
+      <ion-input
+        [(ngModel)]="userData.district"
+        type="text"
+        mode="md"
+        label="Kabupaten"
+        label-placement="floating"
+        fill="outline"
+        style="margin-top: 8px;"
+        readonly>
+        <ion-icon
+          slot="end"
+          name="chevron-down-outline"
+          style="cursor: pointer;">
+        </ion-icon>
+      </ion-input>
+    </ion-item>
+  </div>
+  <div [ngStyle]="{ 'display' : isDistrict ? 'block' : 'none'}" class="dropdown-content">
+    <div class="item" (click)="userData.district = 'Kabupaten A'; isDistrict = !isDistrict">Kabupaten A</div>
+    <div class="item" (click)="userData.district = 'Kabupaten B'; isDistrict = !isDistrict">Kabupaten B</div>
+  </div>
+  <ion-item class="mt-6" style="--border-color: #FFFFFF">
+    <ion-input
+      [(ngModel)]="userData.addres"
+      type="text"
+      mode="md"
+      label="Alamat Lengkap"
+      label-placement="floating"
+      fill="outline"
+      placeholder="Masukkan Alamat Lengkap"
+      style="margin-top: 8px;">
+    </ion-input>
+  </ion-item>
+  <div class="button-section mt-16" style="margin-left: 16px; margin-right: 16px; margin-bottom: 30px;">
+    <ion-button expand="full" color="none" fill="clear" class="red-button" (click)="goBack()">Simpan</ion-button>
+  </div>
+
+</ion-content>

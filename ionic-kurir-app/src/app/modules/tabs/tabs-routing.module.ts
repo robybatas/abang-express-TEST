@@ -9,15 +9,23 @@ const routes: Routes = [
     children: [
       {
         path: 'tab1',
-        loadChildren: () => import('../../tab1/tab1.module').then(m => m.Tab1PageModule)
+        loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
       },
       {
         path: 'tab2',
-        loadChildren: () => import('../../tab2/tab2.module').then(m => m.Tab2PageModule)
+        loadChildren: () => import('../location/location.module').then(m => m.LocationPageModule)
       },
       {
         path: 'tab3',
-        loadChildren: () => import('../../tab3/tab3.module').then(m => m.Tab3PageModule)
+        loadChildren: () => import('../package/package.module').then(m => m.PackagePageModule)
+      },
+      {
+        path: 'tab4',
+        loadChildren: () => import('../notification/notification.module').then(m => m.NotificationPageModule)
+      },
+      {
+        path: 'tab5',
+        loadChildren: () => import('../profile/profile.module').then(m => m.ProfilePageModule)
       },
     ]
   },

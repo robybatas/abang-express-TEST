@@ -96,9 +96,23 @@
   margin-bottom: 16px;
 }
 
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mt-6 {
+  margin-top: 6px;
+}
+
+
+.mt-16 {
+  margin-top: 16px;
+}
+
 .mb-12 {
   margin-bottom: 12px;
 }
+
 
 .mtb-16-8 {
   margin-top: 16px;
@@ -129,5 +143,38 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 16.41px;
+    text-transform: none;
   }
+
+  .red-button-clear {
+    height: 48px;
+    color: #E52138;
+    border-radius: 12px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    text-transform: none;
+  }
+}
+
+.night-sky {
+  color: #344054;
+}
+
+ion-input {
+  --border-radius: 8px !important;
+  --border-color: #D0D5DD !important;
+  --color: #667085 !important;
+}
+
+
+.ion-valid.sc-ion-input-md-h {
+  --highlight-color: #667085 !important;
+}
+
+.remove-padding {
+  margin-left: -18px;
+  margin-right: -18px;
+  margin-top: 8px;
 }

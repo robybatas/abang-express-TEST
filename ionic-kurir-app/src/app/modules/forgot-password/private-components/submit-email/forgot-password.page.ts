@@ -19,11 +19,7 @@ export class ForgotPasswordPage implements OnInit {
   }
 
   onClickContinue() {
-    if(this.userData.email.length > 0){
-      this.navCtrl.navigateRoot('/forgot-password/otp', { animated: true });
-    } else {
-      alert('Maaf, jangan dikosongin bosku! isi ngasal aja')
-    }
+    this.navCtrl.navigateRoot('/forgot-password/otp', { animated: true });
   }
 
 }

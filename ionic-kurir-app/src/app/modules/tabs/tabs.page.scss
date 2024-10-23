@@ -40,12 +40,12 @@
 
 .active-label {
   color: #E52138;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
 }
 
 .inactive-label {
   color: #A0A4A8;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
 }
 
 .pick-icon {
@@ -56,7 +56,7 @@
   content: url('/assets/icon/pickup.svg');
   font-size: 56px;
   position: absolute;
-  bottom: 14px;
+  bottom: 18px;
   z-index: 100;
   left: calc(50vw - 28px);
 }
