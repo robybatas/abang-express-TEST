@@ -1,0 +1,101 @@
+.home-container {
+  background-image: url('/assets/img/home-background.svg');
+  background-position: top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-height: 180px;
+  margin-bottom: 500px;
+}
+
+.home-title {
+  color: #FFFFFF !important;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.agen-distirct {
+  color: #FFFFFF !important;
+  text-align: center;
+}
+
+.custom-card {
+  border-radius: 16px !important;
+  margin-top: 18px;
+
+  @media screen and (min-width: 426px) {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .custom-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    justify-content: space-between;
+    padding: 16px 20px;
+
+    img{
+      font-size: 32px;
+    }
+
+    .home-status {
+      padding-top: 6px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+  }
+}
+
+.pickup-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px;
+  gap: 0;
+  margin-bottom: 0;
+
+  .pickup-item {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    margin-top: -36px;
+    cursor: pointer;
+  }
+
+  .pickup-card {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+}
+
+.pickup-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-left: 10px;
+}
+
+.pickup-card-2 {
+  border-radius: 16px !important;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.pck-crd-2-head {
+  border-bottom: 1px solid #D0D5DD;
+  height: 50px;
+}
+
+.addres-box {
+  border-radius: 12px;
+  margin-top: 6px;
+  background-color: #FFFAEB;
+  padding: 8px 16px;
+}

@@ -37,3 +37,8 @@
 /* @import "@ionic/angular/css/palettes/dark.system.css"; */
 
 @import "./theme/custom.scss";
+
+
+:root {
+  --ion-mode: ios;
+}

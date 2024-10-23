@@ -25,6 +25,10 @@ const routes: Routes = [
   {
     path: 'package',
     loadChildren: () => import('./modules/package/package.module').then( m => m.PackagePageModule)
+  },
+  {
+    path: 'pickup-list/:id',
+    loadChildren: () => import('./modules/pickup-list/pickup-list.module').then( m => m.PickupListPageModule)
   }
 ];
 @NgModule({

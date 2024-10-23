@@ -5,6 +5,8 @@ import { ForgotPasswordPage } from './private-components/submit-email/forgot-pas
 import { InputOtpPage } from './private-components/input-otp/input-otp.page';
 import { InputNewPasswordPage } from './private-components/input-new-password/input-new-password.page';
 import { SuccessChangePage } from './private-components/success-change/success-change.page';
+import { ChangeProfilePage } from '../profile/change-profile/change-profile.page';
+import { ChangePasswordPage } from '../profile/change-password/change-password.page';
 
 const routes: Routes = [
   {
@@ -22,6 +24,14 @@ const routes: Routes = [
   {
     path: 'success-change',
     component: SuccessChangePage
+  },
+  {
+    path: 'change-profile',
+    component: ChangeProfilePage
+  },
+  {
+    path: 'change-password',
+    component: ChangePasswordPage
   }
 ];
 

@@ -7,7 +7,6 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['tabs.page.scss']
 })
 export class TabsPage {
-
   tab: string = 'tab1';
 
   constructor(private navCtrl: NavController) {}
@@ -18,5 +17,6 @@ export class TabsPage {
       this.navCtrl.navigateRoot('menu/tab3', { animated: true });
     }
   }
+
 
 }

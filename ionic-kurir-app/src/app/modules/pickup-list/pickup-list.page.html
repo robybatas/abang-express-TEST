@@ -1,0 +1,766 @@
+<ion-content mode="ios" [fullscreen]="true">
+  <app-header-with-button-back title="Pickup"></app-header-with-button-back>
+  <div class="flex-row sticky">
+    <div id="tab1" class="width-25 tab-item text-tab" (click)="onChangeTab('tab1')">Pending</div>
+    <div id="tab2" class="width-25 tab-item text-tab" (click)="onChangeTab('tab2')">In Progress</div>
+    <div id="tab3" class="width-25 tab-item text-tab" (click)="onChangeTab('tab3')">Success</div>
+    <div id="tab4" class="width-25 tab-item text-tab" (click)="onChangeTab('tab4')">Trouble</div>
+  </div>
+
+  <!-- Peneding -->
+  <div id="item1" class="pickup-container">
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-pending">Pending</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-pending">Pending</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-pending">Pending</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-pending">Pending</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-pending">Pending</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <!-- In Progress -->
+  <div id="item2" class="pickup-container">
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-in-progress">Inprogress</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-in-progress">Inprogress</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-in-progress">Inprogress</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-in-progress">Inprogress</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-in-progress">Inprogress</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <!-- Success -->
+  <div id="item3" class="pickup-container">
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-success">Success</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-success">Success</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-success">Success</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-success">Success</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-success">Success</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <!-- Trouble -->
+  <div id="item4" class="pickup-container">
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-trouble">Trouble</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-trouble">Trouble</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-trouble">Trouble</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-trouble">Trouble</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="pickup-card-2">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-trouble">Trouble</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>

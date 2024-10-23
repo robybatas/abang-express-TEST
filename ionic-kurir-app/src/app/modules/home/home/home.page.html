@@ -1,0 +1,98 @@
+<ion-content mode="ios" [fullscreen]="true">
+  <div class="home-container">
+    <div class="text-xs-regular home-title">Abang Express</div>
+    <div class="text-headline agen-distirct mt-6">Agen DKI Jakarta</div>
+    <ion-card class="custom-card">
+      <ion-card-content class="custom-flex">
+        <img alt="avatar" width="32" height="32" src="/assets/img/avatas.svg" />
+        <div class="home-status">
+          <div class="text-md-semibold">{{ status }}</div>
+        </div>
+        <ion-toggle aria-label="Medium toggle" color="danger" [checked]="false" class="custom-toggle toggle-home" (click)="onChangeToggle()"></ion-toggle>
+      </ion-card-content>
+    </ion-card>
+    <div class="pickup-box">
+      <div class="pickup-item" (click)="onClickPickup('1')">
+        <ion-card class="pickup-card" style="margin-right: 0.5rem;">
+          <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+          <div class="pickup-info">
+            <div class="text-xs-regular">Pending</div>
+            <div class="text-xs-medium">1 Pickup</div>
+          </div>
+        </ion-card>
+      </div>
+      <div class="pickup-item" (click)="onClickPickup('2')">
+        <ion-card class="pickup-card" style="margin-left: 0.5rem;">
+          <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+          <div class="pickup-info">
+            <div class="text-xs-regular">Inprogress</div>
+            <div class="text-xs-medium">1 Pickup</div>
+          </div>
+        </ion-card>
+      </div>
+      <div class="pickup-item" (click)="onClickPickup('3')">
+        <ion-card class="pickup-card" style="margin-right: 0.5rem;">
+          <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+          <div class="pickup-info">
+            <div class="text-xs-regular">Success</div>
+            <div class="text-xs-medium">1 Pickup</div>
+          </div>
+        </ion-card>
+      </div>
+      <div class="pickup-item" (click)="onClickPickup('4')">
+        <ion-card class="pickup-card" style="margin-left: 0.5rem;">
+          <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+          <div class="pickup-info">
+            <div class="text-xs-regular">Trouble</div>
+            <div class="text-xs-medium">1 Pickup</div>
+          </div>
+        </ion-card>
+      </div>
+    </div>
+    <div class="flex-space-between margin-lr-16">
+      <div class="text-500-14">
+        Pending
+      </div>
+      <div class="text-500-14 red" style="cursor: pointer;" (click)="onClickPickup('1')">
+        Lihat Semua
+      </div>
+    </div>
+    <ion-card class="pickup-card-2" (click)="onClickPickup('1')">
+      <ion-card-content>
+        <div class="flex-space-between pck-crd-2-head" >
+          <div class="flex-row">
+            <img alt="pickup" width="40" height="40" src="/assets/img/pickup.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">#1234566788</div>
+              <div class="text-xs-regular">10 Sep 2021</div>
+            </div>
+          </div>
+          <div class="badge-pending">Pending</div>
+        </div>
+        <div class="flex-space-between mt-6">
+          <div class="pickup-info">
+            <div class="text-xs-regular">Berat</div>
+            <div class="text-xs-medium">32 Kg</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular">Total Paket</div>
+            <div class="text-xs-medium">50</div>
+          </div>
+          <div class="pickup-info">
+            <div class="text-xs-regular text-right">Estimasi</div>
+            <div class="text-xs-medium text-right">10 Sep 2021, 20:20 WIB</div>
+          </div>
+        </div>
+        <div class="addres-box">
+          <div class="flex-row">
+            <img alt="location" width="16" height="16" src="/assets/icon/location.svg" />
+            <div class="pickup-info">
+              <div class="text-xs-medium">Kost</div>
+              <div class="text-xs-regular">Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....</div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

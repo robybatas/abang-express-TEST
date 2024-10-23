@@ -15,11 +15,11 @@ export class ProfilePage {
   }
 
   onClickChangeProfile() {
-    this.navCtrl.navigateRoot('/menu/tab5/change-profile', { animated: true });
+    this.navCtrl.navigateRoot('/forgot-password/change-profile', { animated: true });
   }
 
   onClickChangePassword() {
-    this.navCtrl.navigateRoot('/menu/tab5/change-password', { animated: true });
+    this.navCtrl.navigateRoot('/forgot-password/change-password', { animated: true });
   }
 
 }

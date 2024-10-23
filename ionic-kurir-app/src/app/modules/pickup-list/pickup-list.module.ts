@@ -1,22 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
 
-import { ProfilePageRoutingModule } from './profile-routing.module';
-
-import { ProfilePage } from './profile/profile.page';
+import { PickupListPageRoutingModule } from './pickup-list-routing.module';
+import { PickupListPage } from './pickup-list.page';
 import { GlobalModule } from 'src/app/shared-components/global/global.module';
+
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ProfilePageRoutingModule,
+    PickupListPageRoutingModule,
     GlobalModule
   ],
-  declarations: [ProfilePage, ]
+  declarations: [PickupListPage]
 })
-export class ProfilePageModule {}
+export class PickupListPageModule {}
